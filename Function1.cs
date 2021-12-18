@@ -19,8 +19,6 @@ namespace TestAPI
         {
             log.LogInformation("");
 
-            string name = req.Query["name"];
-
             
             return new OkObjectResult("");
         }

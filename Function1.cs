@@ -15,7 +15,7 @@ namespace TestAPI
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "{name}")] HttpRequest req,
-            ILogger log)
+            ILogger log,string name)
         {
             return new OkObjectResult("");
         }

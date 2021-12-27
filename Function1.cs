@@ -17,7 +17,7 @@ namespace TestAPI
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "{name}")] HttpRequest req,
             ILogger log,string name)
         {
-            return new OkObjectResult($"hello {name},");
+            return new OkObjectResult($"hello {name},my");
         }
     }
 }
